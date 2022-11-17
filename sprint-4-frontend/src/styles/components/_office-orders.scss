@@ -1,0 +1,176 @@
+.dashboard-orders {
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    background-color: rgb(247, 247, 247);
+    .dashboard-container {
+        display: flex;
+        .seller-preformance {
+            background-color: white;
+            width: 455px;
+            margin: 20px 0 0 20px;
+            padding: 1px 20px 5px;
+            border-bottom: 1px solid #e5e5e5;
+            border-right: 1px solid #e5e5e5;
+            .dashboard-profile {
+                .seller-details {
+                    padding-top: 24px;
+                    display: flex;
+                    align-items: center;
+                    img {
+                        height: 60px;
+                        width: 60px;
+                        border-radius: 50%;
+                        margin-right: 20px;
+                        object-fit: cover;
+                    }
+                    div {
+                        line-height: 140%;
+                        font-size: 18px;
+                        color: #62646a;
+                        font-weight: 700;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+        }
+        .dashboard-orders {
+            padding: 20px;
+            width: 100%;
+            h3 {
+                line-height: 42px;
+                margin: 0;
+                padding: 0;
+                font-size: 18px;
+                display: inline-block;
+                color: #0e0e0f;
+                font-weight: 800;
+                font-family: macanBold;
+                span {
+                    color: #999;
+                    line-height: 24px;
+                }
+            }
+            .orders-filter {
+                padding: 12px;
+                background-color: white;
+                border: 1px solid #eee;
+                box-shadow: 0 2px 3px -2px rgb(0 0 0 / 15%);
+                position: relative;
+                z-index: 1;
+                display: flex;
+                justify-content: space-between;
+                // align-items: center;
+                h3{
+                    text-transform: capitalize;
+                }
+                select {
+                    font-size: 16px;
+                    line-height: 24px;
+                    height: 42px;
+                    border: 1px solid #c5c6c9;
+                    // letter-spacing: 0.7px;
+                    color: #62646a;
+                    border-radius: 4px;
+                    padding: 11px 8px 11px 8px;
+                    font-family: macan;
+                    transition: 0.15s ease-in-out;
+                    cursor: pointer;
+                    &:hover {
+                        border-color: #95979d;
+                    }
+                }
+            }
+            .orders-container {
+                ul {
+                    background-color: white;
+                    padding: 0;
+                    .order-categories {
+                        display: flex;
+                        padding: 10px 15px;
+                        border: 1px solid #eee;
+                        border-bottom: 0;
+                        div{
+                            padding: 0 11px;
+                        }
+                        .category-title {
+                            margin-right: auto;
+                            // padding-left: 0;
+                            flex: 1;
+                        }
+                        .category-name {
+                            width: 10%;
+                        }
+                        .category-price {
+                            width: 5%;
+                            text-align: center;
+                        }
+                        .category-actions {
+                            width: 10%;
+                            text-align: center;
+                        }
+                        .category-status {
+                            width: 10%;
+                            text-align: center;
+                        }
+                        .category-date {
+                            width: 10%;
+                            text-align: center;
+                        }
+                    }
+                    li {
+                        border: 1px solid #eee;
+                        padding: 15px;
+                        display: flex;
+                        transition: background-color 0.1s;
+                        &:hover {
+                            background-color: #f4f4f4;
+                        }
+                        img {
+                            width: 55.125px;
+                            height: 42px;
+                        }
+                        div {
+                            font-size: 14px;
+                            line-height: 20px;
+                            color: #555;
+                            white-space: nowrap;
+                            padding: 11px;
+                        }
+                        .gig-title {
+                            margin-right: auto;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                            flex: 1;
+                        }
+                        .buyer-name {
+                            width: 10%;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                        }
+                        .delivery-date {
+                            width: 10%;
+                            text-align: center;
+                        }
+                        .price {
+                            width: 5%;
+                            text-align: center;
+                        }
+                        .actions-orders {
+                            width: 10%;
+                            text-align: center;
+                            cursor: pointer;
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                        .status{
+                            width: 10%;
+                            text-align: center;
+                            text-transform: capitalize;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
